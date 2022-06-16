@@ -25,9 +25,28 @@ body
     border-radius: .5rem
     box-shadow: 2px 4px 8px #00000052
 
+    @include mixins.responsivo 
+        width: 750px
+
     h2
         text-align: center
         padding-bottom: 1.2rem
+    
+    form
+        @include mixins.responsivo 
+
+            label
+                margin-block: .7rem
+    
+            .box-form
+                display: flex
+                justify-content: space-between
+
+                div
+                    flex-direction: column
+
+                    input
+                        width: 340px
 
     label
         display: block
@@ -39,7 +58,7 @@ body
         width: 100%
         border-bottom: 1px solid #000
     
-    input:focus
+    input:focus, input:active
         border: none
         color: variables.$texto-input
     
@@ -66,3 +85,8 @@ body
         font-weight: 700
         font-size: 1rem
         letter-spacing: .1rem
+        cursor: pointer
+        transition: .6s
+    
+    button:hover
+        opacity: .92
