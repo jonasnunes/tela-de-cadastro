@@ -1,0 +1,68 @@
+@use 'variables'
+@use 'mixins'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    list-style: none
+    border: none
+
+body
+    font-family: variables.$fonte-principal
+    background-image: linear-gradient(45deg, #3164B5, #3368BD, #3872CF, #3B79DB, #458CFF)
+    width: 100vw
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+
+#container
+    width: 350px
+    background-color: #fff
+    flex-direction: column
+    padding: 1.5rem
+    border-radius: .5rem
+    box-shadow: 2px 4px 8px #00000052
+
+    h2
+        text-align: center
+        padding-bottom: 1.2rem
+
+    label
+        display: block
+        padding-bottom: .5rem
+    
+    input
+        padding: .5rem
+        margin-bottom: .38rem
+        width: 100%
+        border-bottom: 1px solid #000
+    
+    input:focus
+        border: none
+        color: variables.$texto-input
+    
+    .checkbox
+        display: flex
+        align-items: center
+        gap: 1rem
+        padding-block: 1.5rem
+
+        input
+            width: 15px
+        
+        label a
+            color: variables.$link-destaque
+    
+    button
+        background-color: variables.$bg-botao
+        display: block
+        margin: auto
+        padding: 1rem
+        width: 80%
+        border-radius: 1.5rem
+        color: #fff
+        font-weight: 700
+        font-size: 1rem
+        letter-spacing: .1rem
