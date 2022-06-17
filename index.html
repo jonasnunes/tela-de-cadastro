@@ -19,29 +19,31 @@
     <div id="container">
         <h2>Cadastre-se para acessar o sistema</h2>
         <form action="index.html" method="get" id="register-form">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="Digite seu e-mail" required data-min-length="3">
+            <div class="half-box">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail" data-required data-email-validate>
+            </div>
             <div class="box-form">
-                    <div>
+                    <div class="half-box">
                         <label for="nome">Nome</label>
-                        <input type="text" id="nome" placeholder="Digite seu nome">
+                        <input type="text" id="nome" placeholder="Digite seu nome" data-min-length="3" data-max-length="16" data-only-letters>
                     </div>
-                    <div>
+                    <div class="half-box">
                         <label for="sobrenome">Sobrenome</label>
-                        <input type="text" id="sobrenome" placeholder="Digite seu sobrenome">
+                        <input type="text" id="sobrenome" placeholder="Digite seu sobrenome" data-min-length="3" data-max-length="16" data-only-letters>
                     </div>
             </div>
             <div class="box-form">
-                <div>
+                <div class="half-box">
                     <label for="senha">Senha</label>
-                    <input type="password" id="senha" placeholder="Digite sua senha">
+                    <input type="password" id="senha" placeholder="Digite sua senha" data-password-validate data-required>
                 </div>
-                <div>
+                <div class="half-box">
                     <label for="confsenha">Confirme sua senha</label>
-                    <input type="password" id="confsenha" placeholder="Digite novamente sua senha">
+                    <input type="password" id="confsenha" placeholder="Digite novamente sua senha" data-equal="password">
                 </div>
             </div>
-            <div class="checkbox">
+            <div class="full-box">
                 <input type="checkbox" id="aceito" required>
                 <label for="aceito">Eu li e aceito os <a href="#">termos de uso</a></label>
             </div>

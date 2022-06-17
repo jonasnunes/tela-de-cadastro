@@ -40,7 +40,6 @@ body {
   #container form .box-form {
     display: flex;
     justify-content: space-between;
-    position: relative;
   }
   #container form .box-form div {
     flex-direction: column;
@@ -63,16 +62,19 @@ body {
   border: none;
   color: #70a2f1;
 }
-#container .checkbox {
+#container .half-box {
+  position: relative;
+}
+#container .full-box {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   padding-block: 1.5rem;
 }
-#container .checkbox input {
+#container .full-box input {
   width: 15px;
 }
-#container .checkbox label a {
+#container .full-box label a {
   color: #458CFF;
 }
 #container input[type=submit] {
@@ -97,8 +99,13 @@ body {
 .error-validation {
   color: #ff1a1a;
   position: absolute;
-  top: 215px;
+  top: 80px;
   font-size: 0.8rem;
+}
+@media (min-width: 768px) {
+  .error-validation {
+    top: 102px;
+  }
 }
 
 .template {
