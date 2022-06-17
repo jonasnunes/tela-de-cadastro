@@ -23,3 +23,5 @@
 <a href="https://www.linkedin.com/in/jonasnunees/" target="_blank">Me envie uma mensagem pelo LinkedIn</a>
 
 <p>Se alguém tiver alguma ideia de projeto e queira me chamar para participar, estou à disposição. Será um prazer compartilhar experiências!</p>
+
+<p>O autor do projeto foi o &copy; Matheus Battisti, a vídeo aula pode ser acessada <a href="https://www.youtube.com/watch?v=zJPuL5lU4qA">clicando aqui</a></p>
