@@ -18,9 +18,9 @@
 <body>
     <div id="container">
         <h2>Cadastre-se para acessar o sistema</h2>
-        <form action="index.html" method="get">
+        <form action="index.html" method="get" id="register-form">
             <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="Digite seu e-mail" required>
+            <input type="email" id="email" placeholder="Digite seu e-mail" required data-min-length="3">
             <div class="box-form">
                     <div>
                         <label for="nome">Nome</label>
@@ -46,10 +46,12 @@
                 <label for="aceito">Eu li e aceito os <a href="#">termos de uso</a></label>
             </div>
     
-            <input type="submit" value="Registrar">
+            <input type="submit" id="btn-submit" value="Registrar">
         </form>
 
     </div>
+
+    <p class="error-validation template"></p>
 
     <script src="scripts/main.js"></script>
 </body>
