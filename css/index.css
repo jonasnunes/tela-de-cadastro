@@ -74,10 +74,11 @@ body {
 #container .checkbox label a {
   color: #458CFF;
 }
-#container button {
+#container input[type=submit] {
   background-color: #3368BD;
   display: block;
   margin: auto;
+  border: none;
   padding: 1rem;
   width: 80%;
   border-radius: 1.5rem;
@@ -88,7 +89,7 @@ body {
   cursor: pointer;
   transition: 0.6s;
 }
-#container button:hover {
+#container input[type=submit]:hover {
   opacity: 0.92;
 }
 
